@@ -1,0 +1,16 @@
+{
+  "name": "expenses-chart-component-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://tony-508.github.io/expenses-chart-component-main",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
