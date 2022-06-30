@@ -1,0 +1,161 @@
+:root {
+    --color-primary: hsl(10, 79%, 65%);
+    --color-secondary: hsl(33, 100%, 98%);
+    --color-tertiary:  hsl(27, 66%, 92%);
+    --color-accent: hsl(28, 10%, 53%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--color-tertiary);
+    /* overflow: hidden; */
+}
+
+h2, h1 {
+    color: hsl(25, 47%, 15%);
+    margin-top: 0;
+}
+
+h6 {
+    color: hsl(25, 47%, 15%);
+    margin-bottom: 0;
+}
+
+p {
+    color: var(--color-accent);
+    margin-bottom: 0;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    width: -webkit-fill-available;
+    align-self: center;
+    border-radius: 1rem ;
+}
+
+.balance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.balance p, .balance h1 {
+    color: white;
+}
+
+.bar-graph {
+    background-color: var(--color-secondary);
+    margin-top: 0.8rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.grid {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    grid-template-columns: repeat(7, 1fr);
+    width: -webkit-fill-available;
+    height: fit-content;
+    margin-top: 3rem;
+}
+
+.day {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#monday {
+    height: 4rem;
+    width: 3rem;
+ 
+}
+
+#tuesday {
+    height: 9rem;
+    width: 3rem;
+}
+
+#wednesday {
+    height: 13rem;
+    width: 3rem;
+    background-color: hsl(186, 34%, 60%);
+}
+
+#wednesday:hover {
+    background-color: hsl(186, 34%, 70%);
+}
+
+#thursday {
+    height: 8rem;
+    width: 3rem;
+}
+
+#friday {
+    height: 7rem;
+    width: 3rem;
+}
+
+#saturday {
+    height: 11rem;
+    width: 3rem;
+}
+
+#sunday {
+    height: 7.8rem;
+    width: 3rem;
+}
+
+.bar {
+    align-self: flex-end;
+    border-radius: 3px;
+    background-color: var(--color-primary);
+}
+
+.bar:hover {
+    background-color: hsl(10, 79%, 75%);
+    cursor: pointer;
+}
+
+.grid-text {
+    color: var(--color-accent);
+    margin-top: 0.5rem;
+}
+
+.line {
+    background-color: hsl(28, 10%, 80%);
+    height: 0.1rem;
+    margin-top: 1rem;
+}
+
+.estimate {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.graph-summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.graph-summary .p {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        width: 550px   ;
+    }
+}
